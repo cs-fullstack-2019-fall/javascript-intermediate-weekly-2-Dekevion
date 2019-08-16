@@ -53,16 +53,15 @@ The user should input the corresponding number of the correct answer displayed i
 
 
 let numInput;
-// availableQuestionArray.push(q1);
-// availableQuestionArray.push(q2);
-// availableQuestionArray.push(q3);
-// availableQuestionArray = Math.floor(Math.random() * availableQuestionArray.length);
+
 while (numInput !== 'q'){
     numInput = prompt(`Please select the correct answer by its number.`);
-    availableQuestionArray.push(q1);
-    availableQuestionArray.push(q2);
-    availableQuestionArray.push(q3);
+    availableQuestionArray[i].push(q1 + q2 + q3);
+    // availableQuestionArray[i].push(q2);
+    // availableQuestionArray[i].push(q3);
     availableQuestionArray = Math.floor(Math.random() * availableQuestionArray.length);
+    console.log(availableQuestionArray);
 }
-console.log(availableQuestionArray);
+// console.log(availableQuestionArray);
+
 
